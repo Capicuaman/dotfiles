@@ -117,6 +117,7 @@ fi
 # ##########################
 
 neofetch
+tmux
 
 # find
 # dotfiles base git repository
