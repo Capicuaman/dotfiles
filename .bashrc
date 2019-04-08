@@ -116,6 +116,8 @@ fi
 # Capicuaman's Smoking .bashrc file  
 # ##########################
 
+neofetch
+
 # find
 # dotfiles base git repository
     alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
@@ -306,5 +308,4 @@ alias dk-elc='docker exec -it `dklcid` bash' # Enter last container (works with 
 # Set up powerful backups with rsync
 # http://lifehacker.com/196122/geek-to-live--mirror-files-across-systems-with-rsync
 # find
-# dotfiles base git repository
-    alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+
