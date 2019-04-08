@@ -1,3 +1,8 @@
+
+# ##########################
+# Capicuaman's Smoking .bashrc file  
+# ##########################
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -112,10 +117,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ##########################
-# Capicuaman's Smoking .bashrc file  
-# ##########################
-
 neofetch
 
 #(1) tmux exists on the system, (2) we're in an interactive shell, and (3) tmux doesn't try to run within itself:
@@ -125,7 +126,13 @@ fi
 
 # find
 # dotfiles base git repository
-    alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+# git init --bare $HOME/dotfiles alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add this alias to .bashrc)
+# bash config config --local status.showUntrackedFiles no
+
+ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+# Basic usage example:
+# config add /path/to/file
+# config commit -m "A short message" config push 
 
 # Add NVM to PATH
 export NVM_DIR="/home/capicuaman/.nvm"
