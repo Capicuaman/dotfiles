@@ -117,7 +117,11 @@ fi
 # ##########################
 
 neofetch
-tmux
+
+#(1) tmux exists on the system, (2) we're in an interactive shell, and (3) tmux doesn't try to run within itself:
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
 
 # find
 # dotfiles base git repository
