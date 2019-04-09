@@ -281,7 +281,7 @@ alias dk-elc='docker exec -it `dklcid` bash' # Enter last container (works with 
 # find
 #  Get way beyond system searching with find
 
-# type
+# nd -m vi-insert "\C-l":clear-screentype
 
 # info - pinfo
 
@@ -320,4 +320,7 @@ alias dk-elc='docker exec -it `dklcid` bash' # Enter last container (works with 
 # Set up powerful backups with rsync
 # http://lifehacker.com/196122/geek-to-live--mirror-files-across-systems-with-rsync
 # find
+
+# Clear screen
+bind -m vi-insert "\C-l":clear-screen
 
