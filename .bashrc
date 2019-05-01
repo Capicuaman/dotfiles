@@ -303,7 +303,13 @@ alias dk-elc='docker exec -it `dklcid` bash' # Enter last container (works with 
 # ##########################
 # Get files
 # ##########################
+
+
 # youtube-dl 
+# 
+# youtube-dl --extract-audio --audio-format mp3 <video URL>
+# sudo pip install --upgrade youtube-dl
+
 
 # wget
 #  Master wget for powerful file-grabbing
