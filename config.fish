@@ -1,19 +1,13 @@
 # CAPICUAMAN DELI config.fish File
-
+# ~/.config/fish/config.fish
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # STARTUP
 
-# NEOFETCH 
 neofetch
-
-
 set fish_greeting ""
 
-
-
-# ~/.config/fish/config.fish
 
 # RUST
 starship init fish | source
@@ -24,3 +18,5 @@ starship init fish | source
 
 set -x PATH $HOME/.rbenv/bin $PATH
 rbenv init - | source
+
+
