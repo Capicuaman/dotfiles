@@ -1,0 +1,11 @@
+# CAPICUAMANS STARSHIP CONFIG
+# ~/.config/starship.toml
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are confi    guring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is bei    ng set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
